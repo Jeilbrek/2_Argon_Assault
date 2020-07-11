@@ -24,7 +24,9 @@
 .vs/
 
 # Rider cache directory
+..idea/
 .idea/
+.idea/.idea.2_Argon_Assault
 
 # Gradle cache directory
 .gradle/
