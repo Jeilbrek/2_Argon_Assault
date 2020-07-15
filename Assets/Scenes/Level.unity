@@ -1011,6 +1011,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 226554837}
+  - component: {fileID: 226554838}
   m_Layer: 0
   m_Name: Player Ship
   m_TagString: Untagged
@@ -1026,13 +1027,33 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 226554836}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 467.3, y: 43.13, z: 21.8}
+  m_LocalPosition: {x: 0, y: -3.48, z: 20.42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 763697301}
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_Father: {fileID: 1304772638}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &226554838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226554836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d547dc6e1f95b4d49996f653f5a95f26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xSpeed: 40
+  ySpeed: 30
+  positionXPitchFactor: -1
+  positionYPitchFactor: -1
+  controlPitchFactor: -20
+  xRange: 18
+  yRangeUpper: 8
+  yRangeBottom: 9.5
 --- !u!1001 &264566541
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7311,10 +7332,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1304772635}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 42.4, z: -124.6}
+  m_LocalRotation: {x: 0.021185592, y: 0.46960813, z: -0.011272363, w: 0.8825488}
+  m_LocalPosition: {x: 332.9225, y: 37.865707, z: -66.09567}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 226554837}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8146,7 +8168,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1407684900
 PrefabInstance:
