@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     [Header("Movement Speed")]
     [Tooltip("In ms^-1")][SerializeField] float xSpeed = 4f;
@@ -22,18 +22,21 @@ public class Player : MonoBehaviour
     [SerializeField] float yRangeBottom = 9.5f;
 
     float xThrow, yThrow;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    bool isControlEnabled = true;
 
     // Update is called once per frame
     void Update()
     {
-        ProcessTranslation();
-        ProcessRotation();
+        if (isControlEnabled)
+        {
+            ProcessTranslation();
+            ProcessRotation();
+        }
+    }
+
+    void OnPlayerDeath()    // called by string reference
+    {
+        isControlEnabled = false;
     }
 
     private void ProcessRotation()
