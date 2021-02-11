@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    [SerializeField] GameObject deathFX;
+
     void Start()
     {
         Collider enemyCollider = gameObject.AddComponent<BoxCollider>();
@@ -13,6 +15,7 @@ public class Enemy : MonoBehaviour
     void OnParticleCollision(GameObject other)
     {
         //print("Bullet particles collided with enemy " + gameObject.name);
+        Instantiate(deathFX, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 }
