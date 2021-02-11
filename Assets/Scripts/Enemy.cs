@@ -18,6 +18,7 @@ public class Enemy : MonoBehaviour
         //print("Bullet particles collided with enemy " + gameObject.name);
         GameObject fx = Instantiate(deathFX, transform.position, Quaternion.identity);
         fx.transform.parent = parent;
+        FindObjectOfType<ScoreBoard>().ScoreHit();
         Destroy(gameObject);
     }
 }
