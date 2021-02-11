@@ -5,6 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [SerializeField] GameObject deathFX;
+    [SerializeField] Transform parent;
 
     void Start()
     {
@@ -15,7 +16,8 @@ public class Enemy : MonoBehaviour
     void OnParticleCollision(GameObject other)
     {
         //print("Bullet particles collided with enemy " + gameObject.name);
-        Instantiate(deathFX, transform.position, Quaternion.identity);
+        GameObject fx = Instantiate(deathFX, transform.position, Quaternion.identity);
+        fx.transform.parent = parent;
         Destroy(gameObject);
     }
 }
