@@ -6,8 +6,10 @@ public class Enemy : MonoBehaviour
 {
     void Start()
     {
-        gameObject.AddComponent<BoxCollider>();
+        Collider enemyCollider = gameObject.AddComponent<BoxCollider>();
+        enemyCollider.isTrigger = false;
     }
+
     void OnParticleCollision(GameObject other)
     {
         //print("Bullet particles collided with enemy " + gameObject.name);
