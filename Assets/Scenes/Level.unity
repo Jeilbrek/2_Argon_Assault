@@ -154,6 +154,7 @@ MonoBehaviour:
   deathFX: {fileID: 1237245152673389262, guid: 4c8cd25d3e5197542a0d8e4761f8435e, type: 3}
   parent: {fileID: 145355098}
   scorePerHit: 25
+  maxHits: 10
 --- !u!4 &49377152 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: bd16a121ccdf0674daacc3277d88c3c0,
@@ -1058,6 +1059,7 @@ MonoBehaviour:
   deathFX: {fileID: 1237245152673389262, guid: 4c8cd25d3e5197542a0d8e4761f8435e, type: 3}
   parent: {fileID: 145355098}
   scorePerHit: 25
+  maxHits: 10
 --- !u!4 &226554837 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1452637818136891305, guid: 3d4516fd9c9174346b47246b7fa08417,
@@ -1176,6 +1178,7 @@ MonoBehaviour:
   deathFX: {fileID: 1237245152673389262, guid: 4c8cd25d3e5197542a0d8e4761f8435e, type: 3}
   parent: {fileID: 145355098}
   scorePerHit: 25
+  maxHits: 10
 --- !u!4 &251100295 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: bd16a121ccdf0674daacc3277d88c3c0,
@@ -1974,6 +1977,7 @@ MonoBehaviour:
   deathFX: {fileID: 1237245152673389262, guid: 4c8cd25d3e5197542a0d8e4761f8435e, type: 3}
   parent: {fileID: 145355098}
   scorePerHit: 25
+  maxHits: 10
 --- !u!1001 &417628884
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4260,6 +4264,7 @@ MonoBehaviour:
   deathFX: {fileID: 1237245152673389262, guid: 4c8cd25d3e5197542a0d8e4761f8435e, type: 3}
   parent: {fileID: 145355098}
   scorePerHit: 25
+  maxHits: 10
 --- !u!1001 &771116553
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4362,6 +4367,7 @@ MonoBehaviour:
   deathFX: {fileID: 1237245152673389262, guid: 4c8cd25d3e5197542a0d8e4761f8435e, type: 3}
   parent: {fileID: 145355098}
   scorePerHit: 25
+  maxHits: 10
 --- !u!1 &800061807 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1848290062, guid: 3d4516fd9c9174346b47246b7fa08417,
@@ -4671,6 +4677,7 @@ MonoBehaviour:
   deathFX: {fileID: 1237245152673389262, guid: 4c8cd25d3e5197542a0d8e4761f8435e, type: 3}
   parent: {fileID: 145355098}
   scorePerHit: 25
+  maxHits: 15
 --- !u!4 &857207915 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8903058273634951509, guid: f1fc5bb90ac285e4486771552d63bcb8,
@@ -9800,6 +9807,7 @@ MonoBehaviour:
   deathFX: {fileID: 1237245152673389262, guid: 4c8cd25d3e5197542a0d8e4761f8435e, type: 3}
   parent: {fileID: 145355098}
   scorePerHit: 25
+  maxHits: 10
 --- !u!4 &1502650688 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4661435515762813124, guid: e289bf5debb17f6459818c207d781953,
@@ -10341,6 +10349,7 @@ MonoBehaviour:
   deathFX: {fileID: 1237245152673389262, guid: 4c8cd25d3e5197542a0d8e4761f8435e, type: 3}
   parent: {fileID: 145355098}
   scorePerHit: 25
+  maxHits: 10
 --- !u!1001 &1631041259
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11148,6 +11157,7 @@ MonoBehaviour:
   deathFX: {fileID: 1237245152673389262, guid: 4c8cd25d3e5197542a0d8e4761f8435e, type: 3}
   parent: {fileID: 145355098}
   scorePerHit: 25
+  maxHits: 10
 --- !u!4 &1803929524 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4661435515762813124, guid: e289bf5debb17f6459818c207d781953,
@@ -11355,6 +11365,7 @@ MonoBehaviour:
   deathFX: {fileID: 1237245152673389262, guid: 4c8cd25d3e5197542a0d8e4761f8435e, type: 3}
   parent: {fileID: 145355098}
   scorePerHit: 25
+  maxHits: 10
 --- !u!1001 &1835444840
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12330,6 +12341,7 @@ MonoBehaviour:
   deathFX: {fileID: 1237245152673389262, guid: 4c8cd25d3e5197542a0d8e4761f8435e, type: 3}
   parent: {fileID: 145355098}
   scorePerHit: 25
+  maxHits: 10
 --- !u!1001 &1962013274
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13896,6 +13908,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gun Right
       objectReference: {fileID: 0}
+    - target: {fileID: 1452637818746814339, guid: 3d4516fd9c9174346b47246b7fa08417,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4903148977910952724, guid: 3d4516fd9c9174346b47246b7fa08417,
         type: 3}
       propertyPath: CollisionModule.enabled
@@ -13920,6 +13937,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Gun Left
+      objectReference: {fileID: 0}
+    - target: {fileID: 4903148977910953193, guid: 3d4516fd9c9174346b47246b7fa08417,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8319347441577021619, guid: 3d4516fd9c9174346b47246b7fa08417, type: 3}

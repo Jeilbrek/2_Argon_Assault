@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] GameObject deathFX;
     [SerializeField] Transform parent;
     [SerializeField] int scorePerHit = 25;
+    [SerializeField] int maxHits = 10;
 
     ScoreBoard scoreBoard;
 
@@ -25,7 +26,22 @@ public class Enemy : MonoBehaviour
     void OnParticleCollision(GameObject other)
     {
         //print("Bullet particles collided with enemy " + gameObject.name);
+        ProcessHit();
+
+        if (maxHits <= 0)
+        {
+            KillEnemy();
+        }
+    }
+
+    private void ProcessHit()
+    {
         scoreBoard.ScoreHit(scorePerHit);
+        maxHits--;
+    }
+
+    private void KillEnemy()
+    {
         GameObject fx = Instantiate(deathFX, transform.position, Quaternion.identity);
         fx.transform.parent = parent;
         Destroy(gameObject);
